@@ -1,0 +1,115 @@
+﻿/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #3e5c5b;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-family: 'Lora', serif;
+    font-size: 2.5em;
+}
+.center-image {
+    display: block;
+    margin: 0 auto;
+    width: 50%; /* Adjust the size of the image */
+}
+
+
+/* Main Content */
+.content {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Titles and Paragraphs */
+.content h2 {
+    font-size: 1.8em;
+    margin-top: 20px;
+    color: #2d3d3f;
+}
+
+.content p {
+    font-size: 1.1em;
+    margin-bottom: 16px;
+    color: #444;
+}
+
+/* Center the image (only the image) */
+.main-img {
+    display: block;  /* Makes the image a block element */
+    margin-left: auto; /* Centers the image horizontally */
+    margin-right: auto; /* Centers the image horizontally */
+    max-width: 100%; /* Prevents the image from exceeding container width */
+    height: auto; /* Maintains aspect ratio */
+}
+
+/* Bold Text for Specific Works and Achievements */
+b {
+    color: #3e5c5b;
+}
+
+/* Footer */
+footer {
+    background-color: #3e5c5b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .content h2 {
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .main-img {
+        width: 100%;  /* Makes the image responsive on smaller screens */
+        height: auto;
+    }
+}
